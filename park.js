@@ -13,12 +13,21 @@ var Park = function (dinosaur) {
             }
         }
     };
+
+    Park.prototype.getOffspringMoreThanTwo = function() {
+      var filteredParkEnclosureArray = this.parkEnclosureArray.filter(function(dinosaur)
+        {
+           return dinosaur.offspring > 2
+        });
+      return filteredParkEnclosureArray;
+    }
   };
 
 
   Park.prototype.empty = function(){
     this.parkEnclosureArray = 0;
   }
+
 
 
 module.exports = Park;
