@@ -1,11 +1,8 @@
-var Dinosaur = function() {
-//   this.type = type;
-//   this.numberOfOffspringPerYear = numberOfOffspringPerYear;
- 
-// };
-
-// var myDinosaur = new Dinosaur("Tyrannosaurus", 4);
-this.type = "Tyrannosaurus";
+var Dinosaur = function(type, offspring) {
+this.type = type;
+this.offspring = offspring;
 }
+
+
 
 module.exports = Dinosaur;
