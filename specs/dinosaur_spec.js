@@ -9,10 +9,10 @@ describe("Dinosaur", function (){
   });
 
   it("Should be Tyrannosaurus", function(){
-    assert.strictEqual("Tyrannosaurus",dinosaur.type);
+    assert.strictEqual(dinosaur.type, "Tyrannosaurus");
   });
 
   it("Should have 4 offspring per year", function(){
-    assert.strictEqual(4, dinosaur.offspring);
+    assert.strictEqual(dinosaur.offspring, 4);
   });
 });
